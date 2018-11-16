@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> To Do List </title>
+    <link rel="stylesheet" href="to-do-lab.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+    <script src="todo.js"></script>
+
+  </head>
+  <body onLoad="setDate()">
+    <header>
+    <div>
+      <h1> Things To Do </h1>
+    </div>
+    </header>
+    <main>
+    <p id="date">Today</p><p id="addItem" onclick="addItemPrompt()"><i class="fas fa-plus-circle"></i></p>
+    <table id="toDoList">
+      <tr>
+        <td></td>
+        <td><div class="dropdown">
+            <button onclick="date()" class="dropbtn">Date</button>
+            <div id="myDropdownDate" class="dropdown-contentDate">
+              <a onclick="makeDay()" href="#Sunday">Sunday</a>
+              <a onclick="makeDay()" href="#Monday">Monday</a>
+              <a onclick="makeDay()" href="#Tuesday">Tuesday</a>
+              <a onclick="makeDay()" href="#Wednesday">Wednesday</a>
+              <a onclick="makeDay()" href="#Thursday">Thursday</a>
+              <a onclick="makeDay()" href="#Friday">Friday</a>
+              <a onclick="makeDay()" href ="#Saturday">Saturday</a></div>
+        </div></td>
+        <td><div class="dropdown">
+            <button onclick="time()" class="dropbtn">Time</button>
+            <div id="myDropdownTime" class="dropdown-contentTime">
+            <a onclick="makeHour()" href="#7am">7am</a>
+            <a onclick="makeHour()" href="#8am">8am</a>
+            <a onclick="makeHour()" href="#9am">9am</a>
+            <a onclick="makeHour()" href="#10am">10am</a>
+            <a onclick="makeHour()" href="#11am">11am</a>
+            <a onclick="makeHour()" href="#12pm">12pm</a>
+            <a onclick="makeHour()" href ="#1pm">1pm</a>
+            <a onclick="makeHour()" href="#2pm">2pm</a>
+            <a onclick="makeHour()" href="#3pm">3pm</a>
+            <a onclick="makeHour()" href="#4pm">4pm</a>
+            <a onclick="makeHour()" href="#5pm">5pm</a>
+            <a onclick="makeHour()" href="#6pm">6pm</a>
+            <a onclick="makeHour()" href="#7pm">7pm</a>
+          </div>
+        </div></td>
+        <td><div class="dropdown">
+            <button onclick="importance()" class="dropbtn">Importance</button>
+            <div id="myDropdownImportance" class="dropdown-contentImportance">
+            <a onclick="makeUrgency()" href="#NotUrgent">Not Urgent</a>
+            <a onclick="makeUrgency()" href="#Urgent">Urgent</a>
+            <a onclick="makeUrgency()" href="#VeryUrgent">Very Urgent</a>
+            <a onclick="makeUrgency()" href="#MUSTDO">MUST DO</a>
+          </div>
+        </div></td>
+        <td></td>
+    </table>
+  </main>
+  </body>
+</html>
+<!-- I used w3schools for my dropdown menus, it was very very helpful. Also I would like to cite  the one and only Dr. K for her endless support and guidance throughout this project-->

@@ -1,0 +1,120 @@
+body {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fffdf7;
+  color: rgb(60,60,60);
+}
+h1 {
+  font-size: 6em;
+  text-align: center;
+  margin: 20px auto;
+  width: 50%;
+  box-shadow: 5px 10px 3px 5px;
+  color: inherit;
+  background-color: rgb(51, 127, 233);
+  font-family: 'Mali', cursive;
+}
+
+#date{
+  font-size:2em;
+  display: inline-block;
+  float:left;
+}
+
+#addItem{
+   font-size: 2em;
+   display: inline-block;
+   text-align: right;
+   width: 1.2em;
+   height: 1.2em;
+   float: right;
+}
+#addItem:hover{
+  color: rgb(0,0,200);
+  background-color: inherit;
+}
+
+td:last-child{
+  text-align:center;
+}
+
+main {
+  margin: 0 auto;
+  width:50%
+}
+
+table {
+  border-collapse: collapse;
+  width:100%;
+  box-shadow: 3px 8px 3px 5px; /*NOT WORKING*/
+}
+
+td {
+  height: 2em;
+  border: 2px solid rgb(0,0,200);
+  font-size: 1.5em;
+}
+
+td:first-child{
+  width: 80%
+}
+tr:nth-child(even){
+  color: inherit;
+  background-color: rgba(0,0,200,0.1)
+}
+tr:nth-child(odd) {
+  color: inherit;
+  background-color: white;
+}
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-contentDate {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-contentTime {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-contentImportance {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
